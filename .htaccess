@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule   ^home/?$   index.html  [NC]
+RewriteRule   ^customer-s/?$   customer-service1.php  [NC] 
+RewriteRule   ^customer-service-sucess/?$   customer-service2.php  [NC]
+RewriteRule   ^open-p/?$   openaccount.php  [NC]

